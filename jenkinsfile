@@ -1,0 +1,19 @@
+pipeline {
+       agent any
+             stages{
+                  stage('scm checkout'){
+	                  step{
+                        script{
+                             echo "Hi this is arvind"
+                           }
+                         }
+                     }
+                  stage('test'){
+                      step{
+                        script{
+                        echo "Hi this is arvind how are you"
+                          }
+                         }
+                   }
+}
+}
