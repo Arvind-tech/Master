@@ -2,14 +2,14 @@ pipeline {
        agent any
              stages{
                   stage('scm checkout'){
-	                  step{
+	                  steps{
                         script{
-                             echo "Hi this is arvind"
+                             git 'https://github.com/Arvind-tech/Master.git'
                            }
                          }
                      }
                   stage('test'){
-                      step{
+                      steps{
                         script{
                         echo "Hi this is arvind how are you"
                           }
