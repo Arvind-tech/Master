@@ -4,14 +4,14 @@ pipeline {
                   stage('scm checkout'){
 	                  steps{
                         script{
-                             git 'https://github.com/Arvind-tech/Master.git'
+                             git checkout 'https://github.com/Arvind-tech/Master.git'
                            }
                          }
                      }
-                  stage('test'){
+                  stage('maven version'){
                       steps{
                         script{
-                        echo "Hi this is arvind how are you"
+                          sh "mvn --version" 
                           }
                          }
                    }
