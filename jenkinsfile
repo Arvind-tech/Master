@@ -1,15 +1,15 @@
 pipeline {
-       agent { label 'slave1' }
+       agent any
              stages{
-                  stage('scm checkout'){
-	                  steps{
+                  /*stage('scm checkout'){
+	              steps{
                         script{
                              git checkout 'https://github.com/Arvind-tech/Master.git'
                            }
                          }
-                     }
+                     }*/
                   stage('maven version'){
-                      steps{
+                     steps{
                         script{
                           sh "mvn --version" 
                           }
