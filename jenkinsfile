@@ -1,13 +1,6 @@
 pipeline {
        agent any
              stages{
-                  /*stage('scm checkout'){
-	              steps{
-                        script{
-                             git checkout 'https://github.com/Arvind-tech/Master.git'
-                           }
-                         }
-                     }*/
                   stage('maven version'){
                      steps{
                         script{
