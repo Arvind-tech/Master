@@ -2,6 +2,7 @@ pipeline {
        agent any
              stages{
                   stage('maven version'){
+                  agent {docker 'maven:3-alpine'}
                      steps{
                         script{
                           sh "mvn --version"
