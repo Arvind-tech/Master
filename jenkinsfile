@@ -1,8 +1,8 @@
 pipeline {
-       agent none
+       agent speedy
              stages{
                   stage('maven version'){
-                  agent {docker 'maven:3-alpine'}
+                  agent {docker 'jenkins/slave'}
                      steps{
                         script{
                           sh "mvn --version"
